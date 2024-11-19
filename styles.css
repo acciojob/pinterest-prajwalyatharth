@@ -1,1 +1,65 @@
 /*  your css code here. If applicable */
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container */
+.hero {
+  display: flex; /* Flexbox to align content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  position: relative;
+  overflow: hidden; /* Ensure image doesn't spill out */
+}
+
+/* Content inside hero */
+.hero-content {
+  z-index: 10; /* Place content above the image */
+  text-align: center;
+  color: white; /* White text color */
+  max-width: 600px; /* Limit text width */
+  padding: 20px;
+}
+
+/* Hero title */
+.hero h1 {
+  font-size: 3rem; /* Large font size */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Hero description */
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+/* Explore Now Button */
+.explore-button {
+  padding: 10px 20px;
+  background-color: #ff5e5e; /* Pinterest-like red */
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color: #d14e4e; /* Darken button on hover */
+}
+
+/* Hero Image */
+.hero img {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Ensure image covers the container */
+  position: absolute; /* Place image as background */
+  top: 0;
+  left: 0;
+  z-index: 1; /* Place image behind content */
+}
